@@ -1,0 +1,14 @@
+{
+  "name": "self_portfolio",
+  "version": "1.0.0",
+  "description": "Modern Web Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o main/css/ --recursive"
+  },
+  "author": "John Y. Lwin",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "4.11.0"
+  }
+}
