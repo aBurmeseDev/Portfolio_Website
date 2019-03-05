@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: white;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
     // Rotate Into X with Menu lines
@@ -26,7 +26,7 @@
 
             }
             // line 2 - hide
-            &::nth-child(2) {
+            &:nth-child(2) {
                 opacity: 0;
             }
             // line 3 - rotate
@@ -84,9 +84,11 @@
         }
 
         .portrait {
-            width: 250px;
-            height: 250px;
-            background: url('../img/');
+            width: 300px;
+            height: 300px;
+            background: url('../img/portrait.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
@@ -113,7 +115,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: white;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
