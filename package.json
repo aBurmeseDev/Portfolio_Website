@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modern Web Portfolio",
   "main": "index.js",
-  "homepage": "https://aburmesedev.github.io/portfolio_website",
+  "homepage": "https://aburmesedev.github.io/Portfolio_Website",
   "scripts": {
     "sass": "node-sass -w scss/ -o main/css/ --recursive",
     "deploy": "gh-pages -d main"
