@@ -3,7 +3,14 @@ $secondary-color: 	hsl(0, 81%, 58%);
 $show-home-image: true;
 $home-image: url(../img/background1.jpg);
 $background-opacity: 0.9;
-
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }

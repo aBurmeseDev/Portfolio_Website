@@ -6,12 +6,13 @@
 }
 
 body {
+  
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather', 'Open Sans', serif;
   line-height: 1.5;
 }
 
@@ -21,15 +22,17 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  
 
   &.lg-heading {
     font-size: 6rem;
+    font-family: 'Montserrat', serif;
   }
 
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    // background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -77,6 +80,12 @@ main {
 
 
 // About Page
+.bio_background {
+  background: url(../img/bio_background.jpg); // Biopage background
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -95,6 +104,12 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    p {
+      
+        color: #f3f3f3;
+        
+      }
+    
   }
 
   .job-1 {
@@ -116,6 +131,12 @@ main {
   }
 }
 // Work Page
+.work_background {
+  background: url(../img/work_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 .projects {
   display: grid;
   grid-gap: 20px;
@@ -133,27 +154,36 @@ main {
   }
 }
 // Contact Page
+.contact_background {
+  background: url(../img/contact_background.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
-  
+  .text-secondary {
+    color: #f3f3f3;
+  }
 
   div {
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
+      padding: 0.75rem 1.5rem;
+      background: #c53c3c;
+      color: #f3f3f3;
+      font-weight: 600;
       span {
-        color: set-text-color($secondary-color);
+        color: #f3f3f3;
       }
     }
   }
@@ -186,7 +216,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: rgba(darken($primary-color, 10),0.5);
   color: set-text-color($primary-color);
   height: 60px;
 }
