@@ -1,11 +1,28 @@
 // XLarge-size screens
 @include mediaXl {
+  // Hire button
+  .hire-btn {
+    a {
+      padding: 0.5rem;
+      opacity: 9;
+    }  
+  }
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 // Large-size screens
 @include mediaLg {
+  // Hire button
+  .hire-btn {
+    a {
+      padding: 0.5rem;
+      opacity: 9;
+    }  
+  }
+  .work_background {
+    // background-size: 1250px 2000px;
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -13,11 +30,18 @@
 }
 // Medium-size screens
 @include mediaMd {
+  // Hire button
+  .hire-btn a {
+    border: 2px solid $secondary-color;
+    padding: 0.5rem;
+    opacity: 9;
+    color: $secondary-color;
+  }
   .bio_background {
     background-size: cover;
   }
   .work_background {
-    background-size: auto;
+   // background-size: 750px 2000px;
   }
   .about_background {
     background-size: cover;
@@ -85,6 +109,19 @@
     
 // Small-size screens
 @include mediaSm {
+    // Hire button
+    .hire-btn a {
+      border: 2px solid $secondary-color;
+      padding: 0.5rem;
+      color: $secondary-color;
+      opacity: 9;
+      /* 
+      &:hover {
+        color: #f161ba;
+        
+      }
+      */
+    }
     // h1 Home font 
     main#home h1 {
         margin-top: 10vh;
@@ -94,7 +131,8 @@
       background-size: cover;
     }
     .work_background {
-      background-size: cover;
+      // background-size: 500px 2500px;
+      
     }
     .about_background {
       background-size: cover;

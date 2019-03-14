@@ -8,6 +8,8 @@
     cursor: pointer;
     @include easeOut;
     
+    
+    
     .btn-line {
         width: 28px;
         height: 3px;
@@ -42,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 2.0;
+    opacity: 2.5;
     visibility: hidden;
     &.show {
         visibility: visible;
@@ -90,7 +92,7 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20%;
-            border: solid 3px #f3f3f3;
+            border: solid 3px $secondary-color;
         }
     }
 

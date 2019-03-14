@@ -58,9 +58,11 @@ main {
 
   .icons {
     margin-top: 1rem;
+    
 
     a {
-      padding: 0.4rem;
+      padding: 0.6rem;
+      color: #333;
       @include easeOut;
 
       &:hover {
@@ -77,11 +79,40 @@ main {
     }
   }
 }
+// Hire button
+.hire-btn {
+  position: absolute;
+  top: 35px;
+  right: 95px;
+  
+  // @include easeOut;
 
+  a {
+    font-size: 15x;
+    font-weight: 600;
+    border: 2px solid $secondary-color;
+    background: none;
+    color: #f3f3f3;
+    opacity: 0.2;
+    padding: 1rem;
+    border-radius: 20%;
+    @include easeOut;
+  }
+  
+  &:hover {
+    
+    a {
+      color: $secondary-color;
+      font-size: 20px;
+      opacity: 9;
+      @include easeIn;
+    }
+  }
+}
 
 // About Page
 .bio_background {
-  background: url(../img/bio_background.jpg); // Biopage background
+  // background: url(../img/bio_background.jpg); // Biopage background
   background-position: center;
   background-repeat: no-repeat;
   
@@ -91,7 +122,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
-    'job1 job2 job3';
+    'skill1 skill2 skill3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -104,27 +135,31 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
-    p {
-      
-        color: #f3f3f3;
-        
-      }
-    
+    /*
+    h3 {
+    transition: 0.5s;
+    @include easeOut;
+    }
+    h3:hover {
+      font-weight: 900;
+      @include easeIn;
+    }
+    */
   }
 
-  .job-1 {
-    grid-area: job1;
+  .skill-1 {
+    grid-area: skill1;
   }
 
-  .job-2 {
-    grid-area: job2;
+  .skill-2 {
+    grid-area: skill2;
   }
 
-  .job-3 {
-    grid-area: job3;
+  .skill-3 {
+    grid-area: skill3;
   }
 
-  .job {
+  .skill {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
@@ -132,10 +167,25 @@ main {
 }
 // Work Page
 .work_background {
-  background: url(../img/work_background.jpg);
+  
+  // background-image: linear-gradient( #00416A, #E4E5E6);
+  // background: url(../img/works_background.jpg); // Workpage background
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   
+}
+.work-heading {
+    margin: 2rem;
+    padding: 1.2rem 1rem;
+}
+.cross-line {
+  border-top: 3px solid $secondary-color;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+}
+.quote {
+  font-family: 'Indie Flower', cursive;
 }
 .projects {
   display: grid;
@@ -155,7 +205,7 @@ main {
 }
 // Contact Page
 .contact_background {
-  background: url(../img/contact_background.jpg);
+  // background: url(../img/contact_background.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +217,7 @@ main {
   align-items: center;
   margin-top: 1rem;
   .text-secondary {
-    color: #f3f3f3;
+    color: $secondary-color;
   }
 
   div {
