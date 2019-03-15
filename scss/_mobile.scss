@@ -20,9 +20,7 @@
       opacity: 9;
     }  
   }
-  .work_background {
-    // background-size: 1250px 2000px;
-  }
+  
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -40,9 +38,7 @@
   .bio_background {
     background-size: cover;
   }
-  .work_background {
-   // background-size: 750px 2000px;
-  }
+  
   .about_background {
     background-size: cover;
   }
@@ -91,9 +87,9 @@
         grid-template-areas:
           'bioimage'
           'bio'
-          'job1'
-          'job2'
-          'job3';
+          'skill1'
+          'skill2'
+          'skill3';
     
         grid-template-columns: 1fr;
       }
@@ -127,17 +123,14 @@
         margin-top: 10vh;
         font-size: 50px;
     }
-    .bio_background {
-      background-size: cover;
+    .work-heading {
+      font-size: 20px;
     }
-    .work_background {
-      // background-size: 500px 2500px;
-      
-    }
-    .about_background {
-      background-size: cover;
+    #body-img {
+      background-size: 50% 75%;
     }
     main {
+
     .lg-heading {
         margin-top: 1rem;
         font-size: 40px;
@@ -169,7 +162,7 @@
         font-size: 15px;
         margin: 0 auto;
         color: $secondary-color;
-        font-weight: 600
+        font-weight: 600;
         }
       }
     }

@@ -1,8 +1,14 @@
-@keyframes spin {
+@keyframes tilt {
   from {
-    transform: rotate(0deg); }
+    transform: skewX(-10deg); }
   to {
-    transform: rotate(360deg); } }
+    transform: skewX(10deg); } }
+
+@keyframes move {
+  30% {
+    letter-spacing: 0.25em; }
+  80% {
+    letter-spacing: 0.15em; } }
 
 .menu-btn {
   position: absolute;
@@ -10,13 +16,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.75s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #000;
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -49,13 +55,13 @@
     background: #e6e6e6;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: rgba(243, 243, 243, 0.9);
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -68,7 +74,7 @@
       border: solid 3px #437eb4; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -82,7 +88,7 @@
     font-weight: 300;
     color: #000;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu .nav-link:hover {
       color: #437eb4; }
 
@@ -102,6 +108,7 @@
   box-sizing: border-box; }
 
 body {
+  transition: all 0.75s ease-in;
   background: #f3f3f3;
   color: #000;
   height: 100%;
@@ -150,22 +157,29 @@ header {
 .text-secondary {
   color: #437eb4; }
 
+.text-highlight {
+  color: #830118; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    animation: tilt 2s 7;
+    animation-direction: alternate; }
     main .icons a {
-      padding: 0.6rem;
-      color: #333;
-      transition: all 0.5s ease-out; }
+      padding: 1.6rem;
+      color: #333; }
       main .icons a:hover {
-        color: #437eb4; }
+        color: #437eb4;
+        transition: all 0.75s ease-out; }
   main#home {
     overflow: hidden;
     float: right; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 20vh;
+      transition: all 0.75s ease-in;
+      animation: move 3s 1; }
 
 .hire-btn {
   position: absolute;
@@ -180,12 +194,12 @@ main {
     opacity: 0.2;
     padding: 1rem;
     border-radius: 20%;
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
   .hire-btn:hover a {
     color: #437eb4;
     font-size: 20px;
     opacity: 9;
-    transition: all 0.5s ease-in; }
+    transition: all 0.75s ease-in; }
 
 .bio_background {
   background-position: center;
@@ -252,7 +266,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #437eb4;
-      transition: all 0.5s ease-out; }
+      transition: all 0.75s ease-out; }
 
 .contact_background {
   background-size: auto;
@@ -272,7 +286,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .boxes div:hover {
       padding: 0.75rem 1.5rem;
       background: #c53c3c;
@@ -359,7 +373,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'skill1' 'skill2' 'skill3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
@@ -381,10 +395,10 @@ main {
   main#home h1 {
     margin-top: 10vh;
     font-size: 50px; }
-  .bio_background {
-    background-size: cover; }
-  .about_background {
-    background-size: cover; }
+  .work-heading {
+    font-size: 20px; }
+  #body-img {
+    background-size: 50% 75%; }
   main .lg-heading {
     margin-top: 1rem;
     font-size: 40px; }
