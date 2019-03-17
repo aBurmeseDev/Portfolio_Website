@@ -66,10 +66,10 @@ main {
 
   .icons {
     margin-top: 1rem;
-    animation: tilt 2s 7;
+    animation: tilt 2s infinite;
     animation-direction: alternate;
     a {
-      padding: 1.6rem;
+      padding: 1.1rem;
       color: #333;
 
       &:hover {
@@ -86,7 +86,7 @@ main {
     h1 {
       margin-top: 20vh;
       @include easeIn;
-      animation: move 3s 1;
+      animation: move 3s infinite;
       
     }
   }
@@ -140,8 +140,8 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border-radius: 5%;
+    border: #fff 3px solid;
   }
 
   .bio {
@@ -192,9 +192,10 @@ main {
     padding: 1.2rem 1rem;
 }
 .cross-line {
-  border-top: 3px solid $secondary-color;
+  border-top: 3px dashed $secondary-color;
   margin: 1rem 0;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 .quote {
   font-family: 'Indie Flower', cursive;
@@ -205,7 +206,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   img {
-    width: 100%;
+    //width: 100%;
+    
     border: 3px #fff solid;
 
     &:hover {
@@ -266,8 +268,9 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: darken(#333, 50);
   color: #fff;
+  font-weight: bold;
 }
 
 .btn-light {

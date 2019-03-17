@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 2.5;
+    opacity: 9.9;
     visibility: hidden;
     &.show {
         visibility: visible;
@@ -59,6 +59,7 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+        
     }
     &-nav {
         margin: 0;
@@ -78,21 +79,23 @@
     &-branding {
         background: rgba($primary-color,0.9);
         transform: translate3d(0, 100%, 0);
+        
         @include easeOut;
         
         &.show {
             // slide in from bottom
             transform: translate3d(0, 0, 0);
+            
         }
 
         .portrait {
             width: 295px;
             height: 310px;
-            background: url('../img/portrait.jpeg');
+            background: url("/main/img/pp_menu.jpeg");
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20%;
-            border: solid 3px $secondary-color;
+            border: solid 3px #fff;
         }
     }
 

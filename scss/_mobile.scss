@@ -20,12 +20,13 @@
       opacity: 9;
     }  
   }
-  
+
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
   
 }
+
 // Medium-size screens
 @include mediaMd {
   // Hire button
@@ -75,11 +76,11 @@
         transform: translate3d(100%, 0, 0);
     
         .portrait {
-          background: url('../img/portrait_sm.jpeg');
+          background: url("/main/img/pp_menu_small.jpeg");
           background-position: center;
           background-repeat: no-repeat;
-          width: 150px;
-          height: 150px;
+          width: 200px;
+          height: 228px;
         }
       }
     
@@ -96,11 +97,12 @@
     
       .projects {
         grid-template-columns: repeat(2, 1fr);
+        img {
+          width: 100%;  // Project image width
+        }
       }
 
-      .projects {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      
     }
     
 // Small-size screens
@@ -142,28 +144,29 @@
   }
     .projects {
       grid-template-columns: 1fr;
+      img {
+        width: 100%;  // Project image width
+      }
     }
     .menu-branding {
       .portrait {
-        background: url('../img/portrait_sm.jpeg');
+        background: url("/main/img/pp_menu_small.jpeg");
         background-position: center;
         background-repeat: no-repeat;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 205px;
       }
     }
     .about-info {
       .bio-image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 229px;
       }
       .bio {
         p {
         font-size: 15px;
-        margin: 0 auto;
-        color: $secondary-color;
         font-weight: 600;
         }
       }
     }
-}
+} 
