@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 9.9;
+    opacity: 0.5;
     visibility: hidden;
     &.show {
         visibility: visible;
@@ -91,7 +91,7 @@
         .portrait {
             width: 295px;
             height: 310px;
-            background: url("/main/img/pp_menu.jpeg");
+            background: url("../img/JYL_logo.jpg");
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20%;

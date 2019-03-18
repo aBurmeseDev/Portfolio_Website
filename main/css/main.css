@@ -65,13 +65,12 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 295px;
-      height: 310px;
-      background: url("/main/img/pp_menu.jpeg");
+      width: 520px;
+      height: 343px;
+      background: url("/main/img/JYL_logo.jpg");
       background-repeat: no-repeat;
       background-position: center;
-      border-radius: 20%;
-      border: solid 3px #fff; }
+       }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.75s ease-out; }
@@ -333,6 +332,13 @@ main {
     opacity: 9; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
+  .menu-branding .portrait {
+      background: url("/main/img/JYL_logo_small.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 520px;
+      height: 343px; }
+  
 
 @media screen and (max-width: 768px) {
   .hire-btn a {
@@ -368,11 +374,11 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("/main/img/pp_menu_small.jpeg");
+      background: url("/main/img/JYL_logo_small.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      width: 200px;
-      height: 228px; }
+      width: 193px;
+      height: 129px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'skill1' 'skill2' 'skill3';
     grid-template-columns: 1fr; }
@@ -410,11 +416,11 @@ main {
     .projects img {
       width: 100%; }
   .menu-branding .portrait {
-    background: url("/main/img/pp_menu_small.jpeg");
+    background: url("/main/img/JYL_logo_small.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    width: 180px;
-    height: 205px; }
+    width: 193px;
+    height: 129px; }
   .about-info .bio-image {
     width: 200px;
     height: 229px; }

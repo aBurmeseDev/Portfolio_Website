@@ -86,7 +86,7 @@ main {
     h1 {
       margin-top: 20vh;
       @include easeIn;
-      animation: move 3s infinite;
+      animation: move 2s infinite;
       
     }
   }
@@ -123,12 +123,7 @@ main {
 }
 
 // About Page
-.bio_background {
-  // background: url(../img/bio_background.jpg); // Biopage background
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -178,15 +173,7 @@ main {
   }
 }
 // Work Page
-.work_background {
-  
-  // background-image: linear-gradient( #00416A, #E4E5E6);
-  // background: url(../img/works_background.jpg); // Workpage background
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
+
 .work-heading {
     margin: 2rem;
     padding: 1.2rem 1rem;
@@ -216,6 +203,29 @@ main {
       @include easeOut;
     }
   }
+}
+/*
+// Contact Page
+.contact_background {
+  margin: 0;
+  padding: 0;
+  background: #444;
+  
+}
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+
 }
 // Contact Page
 .contact_background {
@@ -252,8 +262,7 @@ main {
     }
   }
 }
-
-
+*/
 // Button Styles
 .btn {
   display: block;

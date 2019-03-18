@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modern Web Portfolio",
   "main": "index.js",
-  "homepage": "http://www.johnlwin.info",
+  "homepage": "https://www.johnlwin.info",
   "scripts": {
     "sass": "node-sass -w scss/ -o main/css/ --recursive",
     "deploy": "gh-pages -d main"
@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "4.11.0"
+    "node-sass": "^4.11.0"
   }
 }
