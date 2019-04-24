@@ -8,7 +8,7 @@
     "sass": "node-sass -w scss/ -o main/css/ --recursive",
     "deploy": "gh-pages -d main"
   },
-  "author": "John Y. Lwin",
+  "author": "John Lwin",
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1",
