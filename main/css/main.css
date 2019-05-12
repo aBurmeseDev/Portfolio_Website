@@ -316,6 +316,7 @@ main#home h1 {
   border-color: #437eb4;
   transition: all 0.75s ease-out;
 }
+
 .contact_background {
   background-size: auto;
   background-position: center;
@@ -515,9 +516,12 @@ main .sm-heading {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .item {
+    height: 65vh;
+  }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .hire-btn a {
     padding: 0.5rem;
     opacity: 9;
