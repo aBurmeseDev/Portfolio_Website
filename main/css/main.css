@@ -207,7 +207,7 @@ main#home {
 }
 main#home h1 {
   margin-top: 25vh;
-  font-size: 50px;
+  font-size: 4rem;
 }
 
 .hire-btn {
@@ -532,7 +532,7 @@ main .sm-heading {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .hire-btn a {
     padding: 0.5rem;
     opacity: 9;
@@ -541,6 +541,10 @@ main .sm-heading {
 @media screen and (max-width: 768px) {
   .hire-btn {
     display: none;
+  }
+  main#home h1 {
+    font-size: 3rem;
+    margin-top: 10vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -554,7 +558,7 @@ main .sm-heading {
   background: #437eb4;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 .squares {
