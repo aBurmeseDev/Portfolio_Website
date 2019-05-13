@@ -305,7 +305,7 @@ main#home h1 {
 .projects {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .projects img {
   border: 3px #fff solid;
@@ -384,14 +384,6 @@ main#home h1 {
   height: 60px;
 }
 
-.menu-branding .portrait {
-  background: url("/main/img/JYL_logo_small.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 520px;
-  height: 343px;
-}
-
 .bio_background {
   background-size: cover;
 }
@@ -427,13 +419,7 @@ div.menu-branding.show {
   height: 25vh;
   transform: translate3d(100%, 0, 0);
 }
-.menu-branding .portrait {
-  background: url("/main/img/JYL_logo_small.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 193px;
-  height: 129px;
-}
+
 .about-info {
   grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
   grid-template-columns: 1fr;
@@ -454,7 +440,7 @@ main .sm-heading {
 }
 
 .menu-branding .portrait {
-  background: url("/main/img/JYL_logo_small.jpg");
+  background: url("/img/JYL_logo_small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   width: 193px;
