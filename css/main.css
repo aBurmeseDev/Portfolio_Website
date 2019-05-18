@@ -249,16 +249,7 @@ main#home h1 {
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
-  /*
-    h3 {
-    transition: 0.5s;
-    @include easeOut;
-    }
-    h3:hover {
-      font-weight: 900;
-      @include easeIn;
-    }
-    */
+  font-family: "Open Sans", sans-serif;
 }
 .about-info .skill-1 {
   grid-area: skill1;
