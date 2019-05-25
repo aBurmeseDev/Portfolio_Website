@@ -124,7 +124,7 @@ body {
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: "Merriweather", "Open Sans", serif;
+  font-family: "Roboto Slab", "Raleway", serif;
   line-height: 1.5;
 }
 
@@ -157,6 +157,10 @@ h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   font-family: "Montserrat", sans-serif;
+}
+h2.sm-heading {
+  color: #000000;
+  font-weight: bold;
 }
 
 a {
@@ -249,7 +253,7 @@ main#home h1 {
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .about-info .skill-1 {
   grid-area: skill1;
@@ -282,10 +286,6 @@ main#home h1 {
   margin: 1rem 0;
   padding-bottom: 1rem;
   overflow: hidden;
-}
-
-.quote {
-  font-family: "Indie Flower", cursive;
 }
 
 .projects {
