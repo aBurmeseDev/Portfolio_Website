@@ -214,12 +214,12 @@ main#home h1 {
   font-size: 4rem;
 }
 
-.hire-btn {
+.sayhi-btn {
   position: absolute;
   top: 35px;
   left: 95px;
 }
-.hire-btn a {
+.sayhi-btn a {
   font-size: 15x;
   font-weight: 600;
   /* border-bottom: 2px solid #437eb4; */
@@ -230,11 +230,33 @@ main#home h1 {
 
   transition: all 0.5s ease-out;
 }
-.hire-btn:hover a {
+.sayhi-btn:hover a {
   color: #ffffff;
   font-size: 20px;
   opacity: 9;
   border-style: none;
+  letter-spacing: 5px;
+  transition: all 0.25s ease-in;
+}
+.hire-btn {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+}
+.hire-btn a {
+  font-size: 15x;
+  font-weight: 600;
+  background: none;
+  color: #000000;
+  padding: 1rem;
+  transition: all 0.5s ease-out;
+}
+.hire-btn:hover a {
+  color: #437eb4;
+  font-size: 20px;
+  opacity: 9;
+  border-style: none;
+  letter-spacing: 5px;
   transition: all 0.25s ease-in;
 }
 #about {
