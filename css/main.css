@@ -520,9 +520,16 @@ main .sm-heading {
     padding: 0.5rem;
     opacity: 9;
   }
+  .sayhi-btn a {
+    padding: 0.5rem;
+    opacity: 9;
+  }
 }
 @media screen and (max-width: 768px) {
   .hire-btn {
+    display: none;
+  }
+  .sayhi-btn {
     display: none;
   }
   main#home h1 {
@@ -536,6 +543,9 @@ main .sm-heading {
 }
 @media screen and (max-width: 500px) {
   .hire-btn {
+    display: none;
+  }
+  .sayhi-btn {
     display: none;
   }
 }
