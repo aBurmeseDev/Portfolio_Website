@@ -50,7 +50,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #344c6b;
+  background: #437eb4;
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.75s ease-out;
@@ -222,20 +222,24 @@ main#home h1 {
 .hire-btn a {
   font-size: 15x;
   font-weight: 600;
-  border-bottom: 2px solid #437eb4;
+  /* border-bottom: 2px solid #437eb4; */
   background: none;
-  color: #ffffff;
+  color: #000000;
   opacity: 9;
   padding: 1rem;
 
   transition: all 0.5s ease-out;
 }
 .hire-btn:hover a {
-  color: #437eb4;
+  color: #ffffff;
   font-size: 20px;
   opacity: 9;
   border-style: none;
   transition: all 0.25s ease-in;
+}
+#about {
+  background-image: url("/img/bagan_background.jpg");
+  background-size: cover;
 }
 
 .about-info {
@@ -251,34 +255,42 @@ main#home h1 {
 .bio {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   color: rgb(0, 0, 0);
-  /* background-color: #bbbbbb; */
+  border-bottom: #437eb4 3px solid;
   padding: 0.5rem;
 }
 
 .about-info .bio-image {
   grid-area: bioimage;
+  width: 200px;
+  height: 229px;
   margin: auto;
   border-radius: 5%;
-  border: #fff 3px solid;
+  border: #fff 1px solid;
 }
 .about-info .bio {
   /* grid-area: bio; */
-  font-size: 1.5rem;
-  font-family: "Raleway", sans-serif;
+  font-size: 0.95rem;
+  font-family: "Roboto Slab", "Raleway", sans-serif;
+  font-weight: 700;
 }
+
 .about-info .skill-1 {
   grid-area: skill1;
+  color: #ffffff;
 }
 .about-info .skill-2 {
   grid-area: skill2;
+  color: #ffffff;
 }
 .about-info .skill-3 {
   grid-area: skill3;
+  color: #ffffff;
 }
 .about-info .skill {
-  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background: rgba(141, 141, 141, 0.5);
   padding: 0.5rem;
-  border-bottom: #437eb4 5px solid;
+  border-bottom: #437eb4 3px solid;
 }
 
 .work_background {
@@ -293,7 +305,7 @@ main#home h1 {
 }
 
 .cross-line {
-  border-top: 3px dashed #437eb4;
+  /* border-top: 3px dashed #437eb4; */
   margin: 1rem 0;
   padding-bottom: 1rem;
   overflow: hidden;
@@ -381,9 +393,6 @@ main#home h1 {
   height: 60px;
 }
 
-.about_background {
-  background-size: cover;
-}
 main {
   align-items: center;
   text-align: center;
@@ -434,14 +443,6 @@ main .sm-heading {
   background-repeat: no-repeat;
   width: 193px;
   height: 129px;
-}
-.about-info .bio-image {
-  width: 200px;
-  height: 229px;
-}
-.about-info .bio p {
-  font-size: 15px;
-  font-weight: 600;
 }
 
 /* The icons tilt effect */
@@ -505,6 +506,10 @@ main .sm-heading {
   main#home h1 {
     font-size: 3rem;
     margin-top: 10vh;
+  }
+  .bio {
+    color: rgb(255, 255, 255);
+    background: rgba(141, 141, 141, 0.5);
   }
 }
 @media screen and (max-width: 500px) {
