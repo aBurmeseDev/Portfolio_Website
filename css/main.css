@@ -12,7 +12,7 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #66fcf1;
+  background: #45a29e;
   transition: all 0.75s ease-out;
 }
 .menu-btn.close {
@@ -205,7 +205,7 @@ main .icons a {
 }
 main .icons a:hover {
   color: #f5f5f5;
-  transition: all 0.75s ease-out;
+  transition: all 0.5s ease-in;
 }
 main#home {
   overflow: hidden;
@@ -216,20 +216,25 @@ main#home h1 {
   font-size: 4rem;
 }
 .toProject {
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: #f5f5f5;
   -webkit-animation: tracking-in-expand-fwd 0.8s
     cubic-bezier(0.215, 0.61, 0.355, 1) 6s both;
   animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 6s
     both;
 }
+.toProject a {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 12px 30px;
+}
 .toProject a:hover {
   color: #66fcf1;
-  transition: all 0.75s ease-out;
+  transition: all 0.75s ease-in;
 }
 .sayhi-btn {
   position: absolute;
-  top: 35px;
+  top: 85px;
   left: 95px;
   -webkit-animation: bounce-top 0.9s 1s both;
   animation: bounce-top 0.9s 1s both;
@@ -239,16 +244,18 @@ main#home h1 {
   font-weight: 600;
   /* border-bottom: 2px solid #437eb4; */
   background: none;
-  color: #f5f5f5;
+  color: #1d1d1d;
   opacity: 9;
-  padding: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 10px;
   transition: all 0.5s ease-out;
 }
 .sayhi-btn:hover a {
-  color: #66fcf1;
   font-size: 20px;
   opacity: 9;
   border-style: none;
+  transition: all 0.25s ease-out;
 }
 .hire-btn {
   position: absolute;
@@ -272,8 +279,13 @@ main#home h1 {
   transition: all 0.25s ease-in;
 }
 #about {
-  background-image: url("/img/bagan_background.jpg");
-  background-size: cover;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(102, 252, 241, 1) 59%
+  );
+  /* background-image: url("/img/bagan_background.jpg");
+  background-size: cover; */
 }
 
 .about-info {
@@ -289,18 +301,10 @@ main#home h1 {
 .bio {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   color: rgb(0, 0, 0);
-  border-bottom: #66fcf1 3px solid;
+  border-bottom: #000 1px solid;
   padding: 0.5rem;
 }
 
-.about-info .bio-image {
-  grid-area: bioimage;
-  width: 200px;
-  height: 229px;
-  margin: auto;
-  border-radius: 5%;
-  border: #fff 1px solid;
-}
 .about-info .bio {
   /* grid-area: bio; */
   font-size: 0.95rem;
@@ -322,9 +326,19 @@ main#home h1 {
 }
 .about-info .skill {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  background: rgba(141, 141, 141, 0.5);
+  background: rgba(141, 141, 141, 0.555);
   padding: 0.5rem;
-  border-bottom: #66fcf1 3px solid;
+  border-bottom: #000 1px solid;
+}
+
+.bio-image {
+  /* float: left; */
+  grid-area: bioimage;
+  width: 200px;
+  /* height: 229px; */
+  margin: auto;
+  border-radius: 5%;
+  /* border: #fff 1px solid; */
 }
 
 .work_background {
@@ -510,24 +524,25 @@ main .sm-heading {
   .hire-btn {
     display: none;
   }
-  .sayhi-btn {
+  /* .sayhi-btn {
     display: none;
-  }
+  } */
   main#home h1 {
     font-size: 3rem;
     margin-top: 10vh;
   }
-  .bio {
+  /* .bio {
     color: rgb(255, 255, 255);
     background: rgba(141, 141, 141, 0.5);
-  }
+  } */
 }
 @media screen and (max-width: 500px) {
   .hire-btn {
     display: none;
   }
   .sayhi-btn {
-    display: none;
+    top: 17px;
+    left: 10px;
   }
 }
 
