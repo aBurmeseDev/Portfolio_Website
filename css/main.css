@@ -271,7 +271,7 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 .hire-btn:hover a {
-  color: #45a29e;
+  color: #830118;
   font-size: 20px;
   opacity: 9;
   border-style: none;
@@ -381,11 +381,31 @@ main#home h1 {
   width: 100%;
 }
 .projects img:hover {
-  opacity: 0.5;
+  opacity: 0.2;
   border-color: #66fcf1;
   transition: all 0.75s ease-out;
 }
-
+.item {
+  position: relative;
+}
+.item:hover .description {
+  visibility: visible;
+  transition: all 0.75s ease-out;
+  transform: scale(0.9);
+}
+.description {
+  position: absolute;
+  top: 18%;
+  left: 12%;
+  right: 12%;
+  font-size: 1.2rem;
+  z-index: 9999;
+  color: #ffffff;
+  visibility: hidden;
+  background: rgba(24, 24, 24, 0.562);
+  padding: 0 12px;
+  overflow-y: scroll;
+}
 .contact_background {
   background-size: auto;
   background-position: center;
