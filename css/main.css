@@ -404,7 +404,6 @@ main#home h1 {
   visibility: hidden;
   background: rgba(24, 24, 24, 0.562);
   padding: 0 12px;
-  overflow-y: scroll;
 }
 .contact_background {
   background-size: auto;
@@ -563,10 +562,9 @@ main .sm-heading {
     font-size: 3rem;
     margin-top: 10vh;
   }
-  /* .bio {
-    color: rgb(255, 255, 255);
-    background: rgba(141, 141, 141, 0.5);
-  } */
+  .reveal {
+    visibility: hidden;
+  }
 }
 @media screen and (max-width: 500px) {
   .hire-btn {
@@ -575,6 +573,9 @@ main .sm-heading {
   .sayhi-btn {
     top: 17px;
     left: 10px;
+  }
+  .reveal {
+    visibility: hidden;
   }
 }
 
