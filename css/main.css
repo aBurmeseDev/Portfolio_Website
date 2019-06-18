@@ -550,6 +550,12 @@ main .sm-heading {
     padding: 0.5rem;
     opacity: 9;
   }
+  .toProject {
+    -webkit-animation: tracking-in-expand-fwd 0.8s
+      cubic-bezier(0.215, 0.61, 0.355, 1) 2s both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      2s both;
+  }
 }
 @media screen and (max-width: 768px) {
   .hire-btn {
@@ -565,6 +571,12 @@ main .sm-heading {
   .reveal {
     visibility: hidden;
   }
+  .toProject {
+    -webkit-animation: tracking-in-expand-fwd 0.8s
+      cubic-bezier(0.215, 0.61, 0.355, 1) 2s both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      2s both;
+  }
 }
 @media screen and (max-width: 500px) {
   .hire-btn {
@@ -576,6 +588,12 @@ main .sm-heading {
   }
   .reveal {
     visibility: hidden;
+  }
+  .toProject {
+    -webkit-animation: tracking-in-expand-fwd 0.8s
+      cubic-bezier(0.215, 0.61, 0.355, 1) 2s both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      2s both;
   }
 }
 
